@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#3F51B5"
+        android:text="EcoEnergy"
+        android:textAlignment="center"
+        android:textColor="#FFC107"
+        android:textSize="52sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="40dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Formulario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Formulario"
+            android:textAlignment="center"
+            android:textColor="#B2FF59"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/Nombre"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Ingrese su Nombre"
+            android:inputType="text"
+            android:textColor="#B2FF59" />
+
+        <EditText
+            android:id="@+id/Domicilio"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Dirección"
+            android:inputType="textPostalAddress"
+            android:textColor="#B2FF59" />
+
+        <EditText
+            android:id="@+id/Telefono"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Teléfono"
+            android:inputType="phone"
+            android:textColor="#B2FF59"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/CorreoElectronico"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Correo"
+            android:inputType="textEmailAddress"
+            android:textColor="#B2FF59" />
+
+        <RadioGroup
+            android:id="@+id/RadioGrupo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/BotonCasa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Casa"
+                    android:textColor="#B2FF59"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/BotonApto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Apartamento"
+                    android:textColor="#B2FF59"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/BotonGranja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Granja"
+                    android:textColor="#B2FF59"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/Paneles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Paneles Solares"
+                android:textColor="#B2FF59"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/Aerogeneradores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Aerogeneradores"
+                android:textColor="#B2FF59"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/SistemaEnergia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Otros Sistemas de Energia Renovable"
+            android:textColor="#B2FF59"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/Enviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#B2FF59"
+            android:text="Enviar"
+            android:textColor="#3F51B5"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:background="#3F51B5"
+                android:text=" @UNALyTodosalaU"
+                android:textAlignment="center"
+                android:textColor="#FFC107"
+                android:textSize="37sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
